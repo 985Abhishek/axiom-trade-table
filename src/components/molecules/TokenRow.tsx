@@ -14,7 +14,7 @@ const TokenRow = ({ token }: Props) => {
       <td>
         <Price value={token.price} />
       </td>
-      <td>{token.priceChange24h}%</td>
+      <td>{token.change24h}%</td>
       <td>${token.liquidity.toLocaleString()}</td>
       <td>{token.holders}</td>
     </tr>

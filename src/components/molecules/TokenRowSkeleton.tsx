@@ -2,26 +2,13 @@
 
 export const TokenRowSkeleton = () => {
   return (
-    <tr className="animate-pulse">
-      <td className="py-3">
-        <Skeleton className="h-4 w-24" />
-      </td>
-
-      <td className="py-3">
-        <Skeleton className="h-4 w-16" />
-      </td>
-
-      <td className="py-3">
-        <Skeleton className="h-4 w-12" />
-      </td>
-
-      <td className="py-3">
-        <Skeleton className="h-4 w-20" />
-      </td>
-
-      <td className="py-3">
-        <Skeleton className="h-4 w-12" />
-      </td>
-    </tr>
+    <div className="animate-pulse flex space-x-4 py-2">
+  <div className="h-4 bg-gray-300 rounded w-24"></div>
+  <div className="h-4 bg-gray-300 rounded w-16"></div>
+  <div className="h-4 bg-gray-300 rounded w-12"></div>
+  <div className="h-4 bg-gray-300 rounded w-20"></div>
+  <div className="h-4 bg-gray-300 rounded w-16"></div>
+  <div className="h-4 bg-gray-300 rounded w-8"></div>
+</div>
   );
 };
